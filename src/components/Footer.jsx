@@ -1,14 +1,15 @@
 import React from 'react';
+import { BUSINESS } from '../config.js';
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-col">
-          <h3>Drivdiag Motors</h3>
+          <h3>{BUSINESS.name}</h3>
           <p>Diagnostic et services automobiles.</p>
-          <p>Email: contact@drivdiagmotors.com</p>
-          <p>Tél: +33 1 23 45 67 89</p>
+          <p>{BUSINESS.address}{BUSINESS.city ? `, ${BUSINESS.city}` : ''}</p>
+          <p>Tél: <a href={`tel:${BUSINESS.phone.replace(/\s/g,'')}`}>{BUSINESS.phone}</a></p>
         </div>
         <div className="footer-col">
           <h4>Suivez-nous</h4>
@@ -20,11 +21,8 @@ export default function Footer() {
         </div>
         <div className="footer-col">
           <h4>Newsletter</h4>
-          <form onSubmit={(e) => e.preventDefault()}>
-            <label htmlFor="email" className="sr-only">Email</label>
-            <input id="email" type="email" placeholder="Votre email" required />
-            <button type="submit">S'inscrire</button>
-          </form>
+          <p>Restez informé de nos offres et conseils.</p>
+          <a className="cta" href="/contact">S'inscrire</a>
         </div>
       </div>
     </footer>

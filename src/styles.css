@@ -29,7 +29,11 @@ img{ max-width:100%; height:auto; display:block }
 .mobile-panel a{ color:#fff; text-decoration:none; padding:10px 12px; border-radius:8px }
 .mobile-panel a.active{ background:rgba(255,255,255,.08) }
 
-.hero{ padding:72px 0 }
+.hero{ 
+  --heroOverlay: .45; /* ajustez l'opacité ici (0 transparent, 1 opaque) */
+  position:relative; 
+}
+.hero-inner{ position:relative; z-index:1 }
 .hero-inner h1{ font-size:40px; margin:0 0 12px }
 .hero-inner p{ color:var(--muted); margin:0 0 20px }
 .actions{ display:flex; gap:12px; flex-wrap:wrap }
@@ -37,6 +41,18 @@ img{ max-width:100%; height:auto; display:block }
 .section{ padding:56px 0; }
 .section.light{ background:linear-gradient(180deg,#101731 0%, #0b1020 100%) }
 .section.dark{ background:linear-gradient(180deg,#0b1020 0%, #060913 100%) }
+
+/* Make hero dominate first view and override section background */
+.section.hero{ 
+  position:relative;
+  background:url('/silver.jpg') center/cover no-repeat; 
+  min-height:100vh; 
+  padding:120px 0 80px; /* espace pour header + respiration */
+}
+.section.hero::before{ content:''; position:absolute; inset:0; background:rgba(0,0,0,var(--heroOverlay)); }
+.section.hero .hero-inner{ display:flex; flex-direction:column; justify-content:center; min-height:calc(100vh - 200px) }
+.section.hero .hero-inner h1{ font-size:48px }
+
 
 .grid{ list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
 .grid > li{ grid-column: span 12; background:rgba(255,255,255,.04); padding:16px; border:1px solid #1f2937; border-radius:12px }
@@ -67,3 +83,7 @@ img{ max-width:100%; height:auto; display:block }
   .grid > li{ grid-column: span 4 }
   .footer-col{ grid-column: span 4 }
 }
+
+/* WhatsApp floating action button */
+.wa-fab{ position:fixed; right:16px; bottom:16px; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#25D366; color:#0b1020; text-decoration:none; font-size:24px; font-weight:700; box-shadow:0 6px 20px rgba(0,0,0,.35); z-index:60 }
+.wa-fab:hover{ filter:brightness(1.05) }

@@ -11,12 +11,15 @@ const section = {
 export default function Home() {
   return (
     <div>
-      <SEO title="Accueil – Drivdiag Motors" description="Accueil du site Drivdiag Motors : hero, services, témoignages et contact." path="/" />
+      <SEO title="Accueil – Drive Diag Motors" description="Accueil du site Drive Diag Motors : hero, services, témoignages et contact." path="/" />
 
       <motion.section className="section light hero" variants={section} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
         <div className="container hero-inner">
-          <h1>Diagnostic auto de précision</h1>
-          <p>Nous accompagnons garages et particuliers avec des solutions fiables et rapides.</p>
+          <h1>Diagnostic auto expert, rapide et fiable</h1>
+          <p>
+            Gagnez du temps et de la sérénité: nous identifions vos pannes avec précision et proposons des solutions
+            claires pour remettre votre véhicule au top.
+          </p>
           <div className="actions">
             <Link className="cta" to="/contact">Demander un devis</Link>
             <Link className="secondary" to="/services">Nos services</Link>
