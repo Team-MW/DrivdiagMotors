@@ -16,6 +16,7 @@ img{ max-width:100%; height:auto; display:block }
 .nav-desktop a.active{ background:var(--bg-soft) }
 .cta{ background:var(--primary); color:white !important; padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:600; }
 .secondary{ color:var(--fg); text-decoration:none; padding:8px 12px; border:1px solid #334155; border-radius:10px }
+.phone-link{ color:#9ee3ff; text-decoration:none; font-weight:600 }
 
 .burger{ display:inline-flex; width:40px; height:40px; align-items:center; justify-content:center; background:transparent; border:0; cursor:pointer }
 .burger span{ display:block; width:22px; height:2px; background:#e5e7eb; margin:4px 0; transition:transform .25s, opacity .25s }
@@ -41,6 +42,25 @@ img{ max-width:100%; height:auto; display:block }
 .section{ padding:56px 0; }
 .section.light{ background:linear-gradient(180deg,#101731 0%, #0b1020 100%) }
 .section.dark{ background:linear-gradient(180deg,#0b1020 0%, #060913 100%) }
+.section.white{ background:#ffffff; color:#0b1020 }
+.section.white h2{ color:#0b1020 }
+.section.white p{ color:#334155 }
+
+/* Variants for Home sections with distinct backgrounds */
+.section.bg-a{ background:radial-gradient(1200px 400px at 10% 0%, #0e1633 0%, #0a1122 50%, #070c18 100%) }
+.section.bg-b{ background:linear-gradient(135deg,#0b1020 0%, #0e2238 50%, #0b1020 100%) }
+.section.bg-c{ background:linear-gradient(180deg,#0a132a 0%, #0b1020 100%) }
+.section.bg-d{ background:linear-gradient(135deg,#0b1020 0%, #141b33 60%, #0b1020 100%) }
+
+/* Photo background section */
+.section.photo{ position:relative; background-position:center; background-size:cover; background-repeat:no-repeat; min-height:80vh }
+.section.photo::before{ content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.35)); }
+.section.photo > .container{ position:relative; z-index:1; display:flex; flex-direction:column; justify-content:center; min-height:80vh }
+.section.photo h2, .section.photo p{ color:#e9eef5 }
+.section.photo h2{ font-size:42px; margin-bottom:12px }
+
+/* Address section */
+.section.address{ background:#0a1122; border-top:1px solid #111a35 }
 
 /* Make hero dominate first view and override section background */
 .section.hero{ 
@@ -56,6 +76,40 @@ img{ max-width:100%; height:auto; display:block }
 
 .grid{ list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
 .grid > li{ grid-column: span 12; background:rgba(255,255,255,.04); padding:16px; border:1px solid #1f2937; border-radius:12px }
+.testimonials{ list-style:none; padding:0; margin:20px 0 0; display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
+.testimonial-card{ grid-column: span 12; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; box-shadow:0 10px 30px rgba(2,6,23,0.06) }
+.testimonial-head{ display:flex; align-items:center; gap:12px; margin-bottom:10px }
+.testimonial-avatar{ width:44px; height:44px; border-radius:50%; overflow:hidden; flex:0 0 auto }
+.testimonial-name{ font-weight:700; color:#0f172a }
+.testimonial-role{ color:#64748b; font-size:14px }
+.testimonial-text{ color:#0f172a }
+.testimonial-stars{ color:#f59e0b; font-size:14px }
+
+/* Cards grid helpers */
+.cards{ list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
+.cards > li{ grid-column: span 12; background:rgba(255,255,255,.04); padding:20px; border:1px solid #1f2937; border-radius:14px }
+.badge-list{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px }
+.badge{ background:rgba(255,255,255,.08); padding:6px 10px; border:1px solid #263554; border-radius:999px; color:#cfe6ff; font-size:14px }
+
+/* Two-column split */
+.split{ display:grid; grid-template-columns:1fr; gap:20px }
+
+/* Pricing */
+.pricing-table{ width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1px solid #23314f }
+.pricing-table th, .pricing-table td{ padding:12px 14px; text-align:left }
+.pricing-table thead th{ background:#0c1429; color:#d6e3ff; border-bottom:1px solid #23314f }
+.pricing-table tbody tr:nth-child(odd){ background:rgba(255,255,255,.03) }
+.pricing-table tbody tr:nth-child(even){ background:rgba(255,255,255,.015) }
+.pricing-table td.price{ color:#7cd67c; font-weight:700 }
+
+/* FAQ */
+.faq{ display:grid; gap:12px; margin-top:12px }
+.faq details{ background:rgba(255,255,255,.04); border:1px solid #1f2937; border-radius:12px; padding:12px 14px }
+.faq summary{ cursor:pointer; font-weight:600 }
+
+/* Map */
+.map{ margin-top:12px; border-radius:12px; overflow:hidden; border:1px solid #1f2937 }
+.map iframe{ display:block; width:100%; height:300px; border:0 }
 
 .page{ padding:32px 0 }
 .page h1{ font-size:34px; margin:0 0 8px }
@@ -82,6 +136,9 @@ img{ max-width:100%; height:auto; display:block }
   .burger{ display:none }
   .grid > li{ grid-column: span 4 }
   .footer-col{ grid-column: span 4 }
+  .cards > li{ grid-column: span 3 }
+  .split{ grid-template-columns:1.2fr .8fr }
+  .testimonial-card{ grid-column: span 4 }
 }
 
 /* WhatsApp floating action button */

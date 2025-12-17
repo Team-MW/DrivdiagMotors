@@ -20,6 +20,7 @@ export default function Header() {
           {BUSINESS.whatsappNumber && (
             <a className="cta" href={`https://wa.me/${BUSINESS.whatsappNumber}?text=${BUSINESS.whatsappMessage}`} target="_blank" rel="noopener noreferrer">WhatsApp</a>
           )}
+          <a className="phone-link" href={`tel:${BUSINESS.phone.replace(/\s/g,'')}`}>{BUSINESS.phone}</a>
         </nav>
 
         <button className={`burger ${open ? 'open' : ''}`} aria-expanded={open} aria-controls="mobile-menu" aria-label="Menu" onClick={() => setOpen(v => !v)}>
