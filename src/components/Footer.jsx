@@ -9,16 +9,16 @@ function Logo() {
 function FacebookIcon(props) {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M13 20v-7h2.5l.5-3H13V8.5c0-.9.3-1.5 1.7-1.5H16V4.1C15.7 4 14.7 4 13.6 4 11.1 4 9.5 5.5 9.5 8.1V10H7v3h2.5v7h3.5z"/>
+      <path d="M13 20v-7h2.5l.5-3H13V8.5c0-.9.3-1.5 1.7-1.5H16V4.1C15.7 4 14.7 4 13.6 4 11.1 4 9.5 5.5 9.5 8.1V10H7v3h2.5v7h3.5z" />
     </svg>
   )
 }
 function InstagramIcon(props) {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" {...props}>
-      <rect x="3" y="3" width="18" height="18" rx="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
     </svg>
   )
 }
@@ -72,8 +72,8 @@ export default function Footer() {
               <li><Link to="/garages">Système de réservation en ligne</Link></li>
             </ul>
             <div className="footer__social">
-              <a href="#" aria-label="Facebook" className="footer__socialBtn"><FacebookIcon/></a>
-              <a href="#" aria-label="Instagram" className="footer__socialBtn"><InstagramIcon/></a>
+              <a href="#" aria-label="Facebook" className="footer__socialBtn"><FacebookIcon /></a>
+              <a href="#" aria-label="Instagram" className="footer__socialBtn"><InstagramIcon /></a>
               <a
                 href="https://wa.me/33600000000"
                 target="_blank"
@@ -81,7 +81,7 @@ export default function Footer() {
                 aria-label="WhatsApp"
                 className="footer__socialBtn"
               >
-                <WhatsAppIcon/>
+                <WhatsAppIcon />
               </a>
             </div>
           </div>

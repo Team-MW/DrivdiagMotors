@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import logoLine from '../assets/logo-drive-diag-motors-ligne.png'
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -10,7 +12,7 @@ export default function Header() {
     <header className="siteHeader">
       <div className="siteHeader__inner">
         <Link to="/" className="siteHeader__brand">
-          Drive Diag Motors
+          <img src={logoLine} alt="Drive Diag Motors" style={{ height: '40px', width: 'auto' }} />
         </Link>
 
         <button
@@ -26,10 +28,8 @@ export default function Header() {
         <nav className={`siteHeader__nav ${isOpen ? 'is-open' : ''}`}>
           <a href="/#prestations" onClick={closeMenu}>Prestations (Home)</a>
           <Link to="/prestations" onClick={closeMenu}>Nos prestations</Link>
-          <a href="/#highlights" onClick={closeMenu}>Services +</a>
-          <a href="/#reasons" onClick={closeMenu}>Pourquoi nous</a>
           <Link to="/garages" onClick={closeMenu}>Trouver un garage</Link>
-          <a href="/#contact" onClick={closeMenu}>Contact</a>
+          <Link to="/contact" onClick={closeMenu}>Contact</Link>
         </nav>
       </div>
     </header>
