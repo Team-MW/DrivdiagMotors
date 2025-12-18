@@ -26,7 +26,7 @@ export default function Header() {
         </button>
 
         <nav className={`siteHeader__nav ${isOpen ? 'is-open' : ''}`}>
-          <a href="/#prestations" onClick={closeMenu}>Prestations (Home)</a>
+          <a href="/#prestations" onClick={closeMenu}>Prestations</a>
           <Link to="/prestations" onClick={closeMenu}>Nos prestations</Link>
           <Link to="/garages" onClick={closeMenu}>Trouver un garage</Link>
           <Link to="/contact" onClick={closeMenu}>Contact</Link>
