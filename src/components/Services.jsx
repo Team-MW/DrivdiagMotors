@@ -1,7 +1,7 @@
 import React from 'react'
 import oilIcon from '../assets/MOTRIO_-_Icon_Oil.svg'
 import acIcon from '../assets/MOTRIO_-_Icon_AirCond.svg'
-import bodyIcon from '../assets/MOTRIO_-_Icon_CarBody_TÃ_lerie.svg'
+import bodyIcon from '../assets/MOTRIO_Icon_CarBody_Tolerie.svg'
 import distIcon from '../assets/Distribution_pzba9n.svg'
 import serviceIcon1 from '../assets/Car_Service_Icons_1_nd3iyd.svg'
 import serviceIcon3 from '../assets/Car_Service_Icons_3_nxm7px.svg'
@@ -10,8 +10,8 @@ import serviceIcon4 from '../assets/Car_Service_Icons_4_fypgtj.svg'
 function ArrowRightMini(props) {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" {...props}>
-      <path d="M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M20 12H4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 12H4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
     </svg>
   )
 }
