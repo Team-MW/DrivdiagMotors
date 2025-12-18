@@ -1,4 +1,5 @@
 import React from 'react'
+import SEO from '../components/SEO.jsx'
 import Footer from '../components/Footer.jsx'
 
 function WhatsAppIcon(props) {
@@ -12,6 +13,10 @@ function WhatsAppIcon(props) {
 export default function Contact() {
     return (
         <>
+            <SEO
+                title="Contact"
+                description="Contactez Drive Diag Motors à Toulouse. Téléphone, WhatsApp ou rendez-vous en ligne pour l'entretien et la réparation de votre véhicule."
+            />
             <section className="section contactPage">
                 <div className="section__inner">
                     <h1 className="contactPage__title">CONTACTEZ-NOUS</h1>

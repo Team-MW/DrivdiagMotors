@@ -72,7 +72,15 @@ export default function GarageFinder() {
                   <li><CreditIcon /> {g.payments}</li>
                   <li>{g.services}</li>
                 </ul>
-                <button className="garageCard__cta btn btn--primary"><span>Sélectionner ce garage</span><span className="btn__icon"><ArrowRightMini /></span></button>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=46+chemin+Teynier,+31300+Toulouse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="garageCard__cta btn btn--primary"
+                >
+                  <span>Itinéraire vers le garage</span>
+                  <span className="btn__icon"><ArrowRightMini /></span>
+                </a>
               </article>
             ))}
           </div>
