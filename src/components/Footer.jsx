@@ -93,7 +93,11 @@ export default function Footer() {
             <a href="#">Politique de confidentialité</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="footer__copy">© {new Date().getFullYear()} Drive Diag Motors. Tous droits réservés.</div>
+          <div className="footer__copy">
+            © {new Date().getFullYear()} Drive Diag Motors. Tous droits réservés.
+            <br />
+            Codé par <a href="https://microdidact.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Microdidact</a>
+          </div>
         </div>
       </div>
     </footer>

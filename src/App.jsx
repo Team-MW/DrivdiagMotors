@@ -2,6 +2,7 @@ import React from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 import Header from './components/Header.jsx'
 import { AppRoutes } from './routes/index.jsx'
+import FloatingWhatsApp from './components/FloatingWhatsApp.jsx'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <main>
           <AppRoutes />
         </main>
+        <FloatingWhatsApp />
       </div>
     </HelmetProvider>
   )

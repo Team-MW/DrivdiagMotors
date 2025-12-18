@@ -3,13 +3,13 @@ import { Helmet } from 'react-helmet-async'
 
 export default function SEO({ title, description, keywords }) {
     // Default values
-    const defaultTitle = 'Drive Diag Motors - Garage Automobile Toulouse'
+    const defaultTitle = 'DrivDiag'
     const defaultDescription = 'Garage automobile à Toulouse (31300) spécialisé en diagnostic, entretien et réparation toutes marques. Vidange, freinage, distribution. Rendez-vous rapide.'
     const defaultKeywords = 'garage toulouse, mécanique auto, révision voiture, diagnostic auto, garage 31300,entretien véhicule'
 
     return (
         <Helmet>
-            <title>{title ? `${title} | Drive Diag Motors` : defaultTitle}</title>
+            <title>{title ? `${title} | DrivDiag` : defaultTitle}</title>
             <meta name="description" content={description || defaultDescription} />
             <meta name="keywords" content={keywords || defaultKeywords} />
 
