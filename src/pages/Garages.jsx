@@ -1,12 +1,14 @@
 import React from 'react'
-import Hero from '../components/Hero.jsx'
+import GaragesHero from '../components/GaragesHero.jsx'
 import GarageFinder from '../components/GarageFinder.jsx'
+import Footer from '../components/Footer.jsx'
 
 export default function Garages() {
   return (
     <>
-      <Hero />
+      <GaragesHero />
       <GarageFinder />
+      <Footer />
     </>
   )
 }

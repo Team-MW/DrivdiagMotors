@@ -80,7 +80,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section services">
+    <section id="prestations" className="section services">
       <div className="section__inner">
         <h2 className="section__title">Prestations atelier</h2>
         <div className="services__grid">

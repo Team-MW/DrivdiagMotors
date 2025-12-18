@@ -2,8 +2,128 @@
 * { box-sizing: border-box; }
 body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; line-height: 1.5; }
 header, footer { padding: 16px; background: #f5f5f5; color: #111; }
-main { padding: 0; }
+main { padding: 64px 0 0; } /* espace pour la nav fixe */
 a { color: inherit; text-decoration: none; margin-right: 12px; }
+
+/* Site Header / Navigation */
+.siteHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(16px);
+  color: #fff;
+}
+.siteHeader__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.siteHeader__brand {
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.siteHeader__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.siteHeader__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.siteHeader__nav a:hover {
+  color: #e10012;
+}
+.siteHeader__menuBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .siteHeader__menuBtn {
+    display: inline-flex;
+  }
+  .siteHeader__nav {
+    position: fixed;
+    inset: 56px 12px auto 12px;
+    background: #111;
+    border-radius: 18px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    display: none;
+  }
+  .siteHeader__nav.is-open {
+    display: flex;
+  }
+}
+
+/* Garages Hero (page trouver un garage) */
+.garagesHero {
+  background: #e10012;
+  color: #fff;
+  padding: 40px 16px 32px;
+}
+.garagesHero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.garagesHero__content {
+  max-width: 620px;
+}
+.garagesHero__eyebrow {
+  margin: 0 0 8px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.9;
+}
+.garagesHero__title {
+  margin: 0 0 10px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.garagesHero__subtitle {
+  margin: 0;
+  font-size: 16px;
+  max-width: 46ch;
+}
+
+.garagesHero,
+.section {
+  scroll-margin-top: 80px; /* quand on clique un lien de la nav */
+}
+
+@media (max-width: 768px) {
+  .garagesHero {
+    padding: 28px 16px 24px;
+  }
+  .garagesHero__title {
+    font-size: 30px;
+  }
+}
 
 /* Hero Section */
 .hero {
@@ -27,9 +147,15 @@ a { color: inherit; text-decoration: none; margin-right: 12px; }
 .hero__title { font-size: 40px; font-weight: 800; margin: 8px 0 0; text-transform: none; }
 .hero__subtitle { color: #cfcfcf; max-width: 42ch; margin: 0; }
 
-.hero__ctaRow { margin-top: 20px; }
+.hero__ctaRow {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 999px; font-weight: 700; }
 .btn--primary { background: #e10012; color: #fff; box-shadow: 0 8px 20px rgba(225,0,18,0.35); }
+.btn--whatsapp { background: #25D366; color: #111; box-shadow: 0 8px 20px rgba(37,211,102,0.35); }
 .btn__icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #111; color: #fff; border-radius: 999px; }
 
 .hero__rating { display: flex; align-items: center; gap: 8px; margin-top: 18px; color: #fff; }
@@ -257,9 +383,15 @@ a { color: inherit; text-decoration: none; margin-right: 12px; }
 .garageCard__cta { margin-top: 12px; }
 
 .garageFinder__map { border-radius: 18px; overflow: hidden; border: 1px solid #e5e5e5; background: #f6f6f6; }
-.garageFinder__mapImg { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block; }
+.garageFinder__mapFrame {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
 
 @media (max-width: 960px) {
   .garageFinder__grid { grid-template-columns: 1fr; }
-  .garageFinder__mapImg { min-height: 300px; }
+  .garageFinder__mapFrame { min-height: 300px; }
 }

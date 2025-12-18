@@ -11,7 +11,7 @@ function ArrowRightIcon(props) {
 
 export default function Promo() {
   return (
-    <section className="section promo">
+    <section id="promo" className="section promo">
       <div className="section__inner">
         <div className="promo__card">
           <div className="promo__left">

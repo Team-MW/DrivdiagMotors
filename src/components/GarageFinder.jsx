@@ -85,7 +85,14 @@ export default function GarageFinder(){
             ))}
           </div>
           <div className="garageFinder__map">
-            <img className="garageFinder__mapImg" src="/map-placeholder.svg" alt="Carte des garages" />
+            <iframe
+              className="garageFinder__mapFrame"
+              title="Carte des garages à proximité"
+              src="https://www.google.com/maps?q=Paris%2C%20France&output=embed"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </div>

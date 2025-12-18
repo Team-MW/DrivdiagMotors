@@ -12,7 +12,7 @@ function ArrowRightMini(props) {
 
 export default function Highlights() {
   return (
-    <section className="section highlights">
+    <section id="highlights" className="section highlights">
       <div className="section__inner">
         <h2 className="highlights__title">Un service proche de vous, avec des produits premium pour tous</h2>
         <div className="highlights__grid">

@@ -38,7 +38,7 @@ const items = [
 
 export default function Reasons() {
   return (
-    <section className="section reasons">
+    <section id="reasons" className="section reasons">
       <div className="section__inner">
         <h2 className="reasons__title">Pourquoi MOTRIO? 3 bonnes raisons de nous choisir.</h2>
         <div className="reasons__content">
