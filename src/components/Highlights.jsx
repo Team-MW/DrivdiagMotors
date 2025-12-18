@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// Import des images depuis assets
+import ControleIcon from '../assets/Clip_path_group_m6daed-1.svg'
+import GarageImg from '../assets/20945729.jpg'
+import ProduitsImg from '../assets/Motrio_france_product_02-1.svg'
+
 function ArrowRightMini(props) {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" {...props}>
@@ -21,30 +26,39 @@ export default function Highlights() {
               <h3 className="highlightCard__title">Bilan sécurité gratuit</h3>
               <p className="highlightCard__desc">Avec 38 points de contrôle, votre sécurité est toujours garantie</p>
               <div className="highlightCard__media">
-                <img src="/hero-placeholder.svg" alt="Icone contrôle" />
+                <img src={ControleIcon} alt="Icone contrôle" />
               </div>
             </div>
-            <a href="#" className="highlightCard__cta btn btn--primary"><span>En savoir plus</span><span className="btn__icon"><ArrowRightMini /></span></a>
+            <a href="#" className="highlightCard__cta btn btn--primary">
+              <span>En savoir plus</span>
+              <span className="btn__icon"><ArrowRightMini /></span>
+            </a>
           </article>
 
           <article className="highlightCard highlightCard--primary">
             <div className="highlightCard__body">
               <h3 className="highlightCard__title">Trouver le garage MOTRIO le plus proche</h3>
               <div className="highlightCard__media">
-                <img src="/hero-placeholder.svg" alt="Garage" />
+                <img src={GarageImg} alt="Garage" />
               </div>
             </div>
-            <Link to="/garages" className="highlightCard__cta btn btn--invert"><span>Trouver un garage</span><span className="btn__icon"><ArrowRightMini /></span></Link>
+            <Link to="/garages" className="highlightCard__cta btn btn--invert">
+              <span>Trouver un garage</span>
+              <span className="btn__icon"><ArrowRightMini /></span>
+            </Link>
           </article>
 
           <article className="highlightCard highlightCard--light">
             <div className="highlightCard__body">
               <h3 className="highlightCard__title">MOTRIO, la meilleure qualité au meilleur prix</h3>
               <div className="highlightCard__media">
-                <img src="/hero-placeholder.svg" alt="Produits" />
+                <img src={ProduitsImg} alt="Produits" />
               </div>
             </div>
-            <a href="#" className="highlightCard__cta btn btn--primary"><span>En savoir plus</span><span className="btn__icon"><ArrowRightMini /></span></a>
+            <a href="#" className="highlightCard__cta btn btn--primary">
+              <span>En savoir plus</span>
+              <span className="btn__icon"><ArrowRightMini /></span>
+            </a>
           </article>
         </div>
       </div>

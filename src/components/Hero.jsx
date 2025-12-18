@@ -60,9 +60,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero__right">
-          <img src={heroImage} alt="Bandeau Drive Diag Motors" className="hero__image" />
-        </div>
+
       </div>
     </section>
   )
