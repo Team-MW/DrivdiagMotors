@@ -1,4 +1,11 @@
 import React from 'react'
+import oilIcon from '../assets/MOTRIO_-_Icon_Oil.svg'
+import acIcon from '../assets/MOTRIO_-_Icon_AirCond.svg'
+import bodyIcon from '../assets/MOTRIO_-_Icon_CarBody_TÃ_lerie.svg'
+import distIcon from '../assets/Distribution_pzba9n.svg'
+import serviceIcon1 from '../assets/Car_Service_Icons_1_nd3iyd.svg'
+import serviceIcon3 from '../assets/Car_Service_Icons_3_nxm7px.svg'
+import serviceIcon4 from '../assets/Car_Service_Icons_4_fypgtj.svg'
 
 function ArrowRightMini(props) {
   return (
@@ -9,62 +16,16 @@ function ArrowRightMini(props) {
   )
 }
 
-// Placeholder line icons
+// Icons basés sur les assets
 const Icons = {
-  oil: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <path d="M18 40c10-10 22-4 28-16"/>
-      <path d="M40 20c0 4-4 8-8 8s-8-4-8-8" stroke="#111"/>
-      <circle cx="44" cy="28" r="6" stroke="#e10012" fill="none"/>
-    </svg>
-  ),
-  belt: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <circle cx="22" cy="32" r="10"/>
-      <circle cx="46" cy="32" r="6"/>
-      <path d="M22 32h18"/>
-    </svg>
-  ),
-  brake: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <path d="M14 32a18 18 0 1036 0"/>
-      <path d="M50 24a8 8 0 010 16"/>
-      <circle cx="32" cy="32" r="3"/>
-    </svg>
-  ),
-  battery: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <rect x="12" y="22" width="40" height="24" rx="4"/>
-      <path d="M20 34h8M24 30v8"/>
-      <path d="M40 30h8"/>
-    </svg>
-  ),
-  ac: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <circle cx="28" cy="32" r="10" stroke="#111"/>
-      <path d="M28 22v20M18 32h20"/>
-      <path d="M42 26c4 2 6 4 6 6s-2 4-6 6"/>
-    </svg>
-  ),
-  tire: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <rect x="24" y="16" width="16" height="32" rx="8"/>
-      <path d="M24 24h16M24 40h16"/>
-    </svg>
-  ),
-  wiper: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <path d="M10 40c8-8 36-8 44 0"/>
-      <path d="M22 40l14-12" stroke="#111"/>
-    </svg>
-  ),
-  body: () => (
-    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#e10012" strokeWidth="2.5">
-      <path d="M8 40h48l-4-8-10-6H22l-8 6-6 8z"/>
-      <circle cx="20" cy="40" r="4" stroke="#111"/>
-      <circle cx="44" cy="40" r="4" stroke="#111"/>
-    </svg>
-  ),
+  oil: () => <img src={oilIcon} alt="" width="72" height="72" />,
+  belt: () => <img src={distIcon} alt="" width="72" height="72" />,
+  brake: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
+  battery: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
+  ac: () => <img src={acIcon} alt="" width="72" height="72" />,
+  tire: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
+  wiper: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
+  body: () => <img src={bodyIcon} alt="" width="72" height="72" />,
 }
 
 const services = [

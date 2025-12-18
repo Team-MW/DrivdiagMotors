@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import heroImage from '../assets/Motrio_france_product_02.svg'
 
 function ArrowRightIcon(props) {
   return (
@@ -60,7 +61,7 @@ export default function Hero() {
         </div>
 
         <div className="hero__right">
-          <img src="/hero-placeholder.svg" alt="Portrait" className="hero__image" />
+          <img src={heroImage} alt="Bandeau Drive Diag Motors" className="hero__image" />
         </div>
       </div>
     </section>

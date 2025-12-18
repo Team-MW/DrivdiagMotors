@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo-drive-diag-motors-ligne.png'
 
 function Logo() {
-  return <span className="footer__logo">DRIVE DIAG MOTORS</span>
+  return <img src={logo} alt="Drive Diag Motors" className="footer__logoImg" />
 }
 
 function FacebookIcon(props) {
