@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 // Import des images depuis assets
 import ControleIcon from '../assets/Clip_path_group_m6daed-1.svg'
 import GarageImg from '../assets/20945729.jpg'
-import ProduitsImg from '../assets/Motrio_france_product_02-1.svg'
+import ProduitsImg from '../assets/Product_Image_Backup.svg'
 
 function ArrowRightMini(props) {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" {...props}>
-      <path d="M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M20 12H4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 12H4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
     </svg>
   )
 }
@@ -37,7 +37,7 @@ export default function Highlights() {
 
           <article className="highlightCard highlightCard--primary">
             <div className="highlightCard__body">
-              <h3 className="highlightCard__title">Trouver le garage MOTRIO le plus proche</h3>
+              <h3 className="highlightCard__title">Trouver le garage le plus proche</h3>
               <div className="highlightCard__media">
                 <img src={GarageImg} alt="Garage" />
               </div>
@@ -50,7 +50,7 @@ export default function Highlights() {
 
           <article className="highlightCard highlightCard--light">
             <div className="highlightCard__body">
-              <h3 className="highlightCard__title">MOTRIO, la meilleure qualité au meilleur prix</h3>
+              <h3 className="highlightCard__title">La meilleure qualité au meilleur prix</h3>
               <div className="highlightCard__media">
                 <img src={ProduitsImg} alt="Produits" />
               </div>

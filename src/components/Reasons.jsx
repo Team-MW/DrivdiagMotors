@@ -21,7 +21,7 @@ const items = [
     n: '01',
     title: 'Des interventions de qualité même sous garantie',
     text:
-      "Le garage MOTRIO prend en charge toutes les interventions d'entretien sur tous les véhicules, y compris ceux sous garantie.",
+      "Le garage Drive Diag Motors prend en charge toutes les interventions d'entretien sur tous les véhicules, y compris ceux sous garantie.",
   },
   {
     n: '02',
@@ -32,7 +32,7 @@ const items = [
     n: '03',
     title: 'Des techniciens en formation continue',
     text:
-      "Votre sécurité est notre priorité, c’est pourquoi nous voulons que votre véhicule soit entre de bonnes mains ! Tous les techniciens MOTRIO suivent des formations en continu pour pouvoir intervenir sur les dernières technologies.",
+      "Votre sécurité est notre priorité, c’est pourquoi nous voulons que votre véhicule soit entre de bonnes mains ! Tous nos techniciens suivent des formations en continu pour pouvoir intervenir sur les dernières technologies.",
   },
 ]
 
@@ -40,7 +40,7 @@ export default function Reasons() {
   return (
     <section id="reasons" className="section reasons">
       <div className="section__inner">
-        <h2 className="reasons__title">Pourquoi MOTRIO? 3 bonnes raisons de nous choisir.</h2>
+        <h2 className="reasons__title">Pourquoi nous choisir ? 3 bonnes raisons.</h2>
         <div className="reasons__content">
           <div className="reasons__list">
             {items.map((it) => (
