@@ -69,6 +69,7 @@ export default function Footer() {
               <li>46 chemin Teynier, 31300 Toulouse</li>
               <li><a href="tel:+33532026444">05 32 02 64 44</a></li>
               <li><a href="tel:+33600000000">Mobile : 06 00 00 00 00</a></li>
+              <li><a href="mailto:Labonneauto31@gmail.com">Labonneauto31@gmail.com</a></li>
               <li><Link to="/garages">Système de réservation en ligne</Link></li>
             </ul>
             <div className="footer__social">

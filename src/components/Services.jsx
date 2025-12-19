@@ -20,11 +20,11 @@ function ArrowRightMini(props) {
 const Icons = {
   oil: () => <img src={oilIcon} alt="" width="72" height="72" />,
   belt: () => <img src={distIcon} alt="" width="72" height="72" />,
-  brake: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
-  battery: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
+  brake: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
+  battery: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
   ac: () => <img src={acIcon} alt="" width="72" height="72" />,
   tire: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
-  wiper: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
+  wiper: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
   body: () => <img src={bodyIcon} alt="" width="72" height="72" />,
 }
 
@@ -44,6 +44,9 @@ export default function Services() {
     <section id="prestations" className="section services">
       <div className="section__inner">
         <h2 className="section__title">Prestations atelier</h2>
+        <p style={{ textAlign: 'center', marginBottom: '32px', fontWeight: 'bold', fontSize: '18px' }}>
+          Taux horaire : 75 € TTC
+        </p>
         <div className="services__grid">
           {services.map((s) => {
             const Icon = Icons[s.id] || Icons.oil
