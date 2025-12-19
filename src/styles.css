@@ -1386,8 +1386,11 @@ a {
 .contactPage__content {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contactPage__info {
@@ -1395,8 +1398,14 @@ a {
   padding: 32px;
   border-radius: 16px;
   border: 1px solid #eee;
-  max-width: 500px;
+  flex: 0 0 350px;
+  max-width: 350px;
   width: 100%;
+}
+
+.contactPage__calendar {
+  flex: 1;
+  min-width: 320px;
 }
 
 .contactPage__info h2 {
@@ -1409,6 +1418,33 @@ a {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .section.contactPage {
+    padding-top: 80px;
+    /* Reduced from default */
+  }
+
+  .contactPage__content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contactPage__calendar {
+    order: -1;
+    /* Move calendar to top */
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contactPage__info {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
 
 /* Floating WhatsApp Button */
 .floatingWhatsApp {

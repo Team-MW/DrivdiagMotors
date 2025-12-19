@@ -14,11 +14,11 @@ export default function Prestations() {
         <div className="section__inner">
           <h1 className="prestationsPage__title">RÉSERVEZ NOS SERVICES</h1>
           <p className="prestationsPage__intro">
-            Les garages Drive Diag Motors répondent à tous vos besoins d&apos;entretien et de réparation.
-            Découvrez nos prestations atelier, nos prix moyens TTC* ainsi que les services adaptés à votre véhicule.
+            Les garages Drive Diag Motors répondent à tous vos besoins d&apos;entretien et de réparation.<br />
+            <strong>Taux horaire : 75 € TTC</strong>
           </p>
         </div>
-      </section>
+      </section >
 
       <Services />
       <Footer />

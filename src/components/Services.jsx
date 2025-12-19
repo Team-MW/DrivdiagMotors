@@ -29,14 +29,14 @@ const Icons = {
 }
 
 const services = [
-  { id: 'oil', title: 'Vidange et Filtre à huile', price: '156€ TTC*' },
-  { id: 'belt', title: 'Distribution et Pompe à eau', price: '611€ TTC*' },
-  { id: 'brake', title: 'Freinage', price: '104€ TTC*' },
+  { id: 'oil', title: 'Révision (Vidange)', price: 'dès 49€ TTC*' },
+  { id: 'belt', title: 'Distribution', price: 'dès 199€ TTC*' },
+  { id: 'brake', title: 'Freinage', price: 'dès 59€ TTC*' },
   { id: 'battery', title: 'Batterie', price: '274€ TTC*' },
   { id: 'ac', title: 'Climatisation', price: '106€ TTC*' },
   { id: 'tire', title: 'Pneumatiques', price: '288€ TTC*' },
   { id: 'wiper', title: "Balais d'essuie-glace", price: '55€ TTC*' },
-  { id: 'body', title: 'Carrosserie', price: 'Prix sur demande €*' },
+
 ]
 
 export default function Services() {

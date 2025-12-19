@@ -1,6 +1,7 @@
 import React from 'react'
 import SEO from '../components/SEO.jsx'
 import Footer from '../components/Footer.jsx'
+import CalendlyWidget from '../components/CalendlyWidget.jsx'
 
 function WhatsAppIcon(props) {
     return (
@@ -26,25 +27,9 @@ export default function Contact() {
                     </p>
 
                     <div className="contactPage__content">
-                        <div className="contactPage__info">
-                            <h2>Nos Coordonnées</h2>
-                            <p>
-                                <strong>Adresse :</strong><br />
-                                46 chemin Teynier<br />
-                                31300 Toulouse
-                            </p>
 
-                            <div className="contactPage__cta">
-                                <a
-                                    href="https://wa.me/33600000000"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="btn btn--whatsapp"
-                                >
-                                    <WhatsAppIcon />
-                                    <span>Devis / Rdv via WhatsApp</span>
-                                </a>
-                            </div>
+                        <div className="contactPage__calendar">
+                            <CalendlyWidget />
                         </div>
                     </div>
                 </div>
