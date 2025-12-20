@@ -27,8 +27,8 @@ function StarRow() {
   return (
     <div className="testiStars">
       <span className="testiStars__icons">★★★★★</span>
-      <strong className="testiStars__value">4.6</strong>
-      <span className="testiStars__count">6397 avis</span>
+      <strong className="testiStars__value">4.9/5</strong>
+      <span className="testiStars__count">423 avis</span>
     </div>
   )
 }

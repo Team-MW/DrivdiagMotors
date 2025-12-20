@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <div className="footer__legal">
-            <a href="#">Mentions légales</a>
+            <Link to="/mentions-legales">Mentions légales</Link>
             <a href="#">Politique de confidentialité</a>
             <a href="#">Cookies</a>
           </div>

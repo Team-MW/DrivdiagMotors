@@ -55,8 +55,8 @@ export default function Hero() {
           <div className="hero__rating">
             <div className="rating__logo" aria-label="Google">G</div>
             <div className="rating__stars" aria-hidden="true">★★★★★</div>
-            <strong className="rating__score">4.6</strong>
-            <span className="rating__count">(parmi 6397 avis)</span>
+            <span className="rating__score">4.9/5</span>
+            <span className="rating__count">(423 avis)</span>
           </div>
         </div>
 

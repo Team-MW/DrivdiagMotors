@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import oilIcon from '../assets/Icon_Oil.svg'
 import acIcon from '../assets/Icon_AirCond.svg'
 import bodyIcon from '../assets/Icon_CarBody_Tolerie.svg'
@@ -23,7 +24,7 @@ const Icons = {
   brake: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
   battery: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
   ac: () => <img src={acIcon} alt="" width="72" height="72" />,
-  tire: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
+  tire: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
   wiper: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
   body: () => <img src={bodyIcon} alt="" width="72" height="72" />,
 }
@@ -61,18 +62,18 @@ export default function Services() {
                     <Icon />
                   </div>
                 </div>
-                <button className="serviceCard__action" aria-label="Voir la prestation">
+                <Link to="/prestations" className="serviceCard__action" aria-label="Voir la prestation">
                   <ArrowRightMini />
-                </button>
+                </Link>
               </article>
             )
           })}
         </div>
         <div className="services__more">
-          <a href="#prestations" className="services__link">
+          <Link to="/prestations" className="services__link">
             Voir toutes nos prestations atelier
             <span className="services__linkIcon" aria-hidden="true">⟲</span>
-          </a>
+          </Link>
         </div>
         <div className="services__note">*Prix moyens — <a href="#infos">pour en savoir plus</a></div>
       </div>
