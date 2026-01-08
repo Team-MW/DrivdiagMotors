@@ -7,6 +7,7 @@ import distIcon from '../assets/Distribution_pzba9n.svg'
 import serviceIcon1 from '../assets/Car_Service_Icons_1_nd3iyd.svg'
 import serviceIcon3 from '../assets/Car_Service_Icons_3_nxm7px.svg'
 import serviceIcon4 from '../assets/Car_Service_Icons_4_fypgtj.svg'
+import clutchIcon from '../assets/Car_Service_Icons_czh0cx.svg'
 
 function ArrowRightMini(props) {
   return (
@@ -22,7 +23,7 @@ const Icons = {
   oil: () => <img src={oilIcon} alt="" width="72" height="72" />,
   belt: () => <img src={distIcon} alt="" width="72" height="72" />,
   brake: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
-  battery: () => <img src={serviceIcon1} alt="" width="72" height="72" />,
+  clutch: () => <img src={clutchIcon} alt="" width="72" height="72" />,
   ac: () => <img src={acIcon} alt="" width="72" height="72" />,
   tire: () => <img src={serviceIcon3} alt="" width="72" height="72" />,
   wiper: () => <img src={serviceIcon4} alt="" width="72" height="72" />,
@@ -33,12 +34,10 @@ const services = [
   { id: 'oil', title: 'Révision (Vidange)', price: 'dès 49€ TTC*' },
   { id: 'belt', title: 'Distribution', price: 'dès 199€ TTC*' },
   { id: 'brake', title: 'Freinage', price: 'dès 59€ TTC*' },
-  { id: 'battery', title: 'Embrayage', price: 'dès 300€ TTC*' },
+  { id: 'clutch', title: 'Embrayage', price: 'dès 300€ TTC*' },
   { id: 'ac', title: 'Climatisation', price: '106€ TTC*' },
   { id: 'tire', title: 'Diagnostique approfondi', price: '49€ TTC*' },
   { id: 'wiper', title: "Diagnostique basic", price: '20€ TTC*' },
-
-
 ]
 
 export default function Services() {
