@@ -1,8 +1,9 @@
 import React from 'react'
 import SEO from '../components/SEO.jsx'
 import Hero from '../components/Hero.jsx'
+import SnapchatPromo from '../components/SnapchatPromo.jsx'
 import Services from '../components/Services.jsx'
-import Promo from '../components/Promo.jsx'
+
 import Highlights from '../components/Highlights.jsx'
 import Reasons from '../components/Reasons.jsx'
 import Testimonials from '../components/Testimonials.jsx'
@@ -13,8 +14,9 @@ export default function Home() {
     <>
       <SEO title="Accueil" />
       <Hero />
+      <SnapchatPromo />
       <Services />
-      <Promo />
+
       <Highlights />
       <Reasons />
       <Testimonials />

@@ -5,6 +5,8 @@ import Garages from '../pages/Garages.jsx'
 import Prestations from '../pages/Prestations.jsx'
 import Contact from '../pages/Contact.jsx'
 
+import MentionsLegales from '../pages/MentionsLegales.jsx'
+
 export function AppRoutes() {
   return (
     <Routes>
@@ -12,6 +14,7 @@ export function AppRoutes() {
       <Route path="/prestations" element={<Prestations />} />
       <Route path="/garages" element={<Garages />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/mentions-legales" element={<MentionsLegales />} />
     </Routes>
   )
 }

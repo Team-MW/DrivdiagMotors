@@ -1,5 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO.jsx'
+import SnapchatPromo from '../components/SnapchatPromo.jsx'
 import Services from '../components/Services.jsx'
 import Footer from '../components/Footer.jsx'
 
@@ -20,6 +21,7 @@ export default function Prestations() {
         </div>
       </section >
 
+      <SnapchatPromo />
       <Services />
       <Footer />
     </>

@@ -27,7 +27,7 @@ export default function Promo() {
             <a className="promo__conditions" href="#conditions">*voir conditions</a>
           </div>
           <div className="promo__right">
-            <img src="/hero-placeholder.svg" alt="Batterie" className="promo__image" />
+            <img src="/promo-battery.jpg" alt="Batterie Premium" className="promo__image" />
           </div>
         </div>
         <div className="promo__divider"><span /></div>

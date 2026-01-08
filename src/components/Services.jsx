@@ -33,10 +33,11 @@ const services = [
   { id: 'oil', title: 'Révision (Vidange)', price: 'dès 49€ TTC*' },
   { id: 'belt', title: 'Distribution', price: 'dès 199€ TTC*' },
   { id: 'brake', title: 'Freinage', price: 'dès 59€ TTC*' },
-  { id: 'battery', title: 'Batterie', price: '274€ TTC*' },
+  { id: 'battery', title: 'Embrayage', price: 'dès 300€ TTC*' },
   { id: 'ac', title: 'Climatisation', price: '106€ TTC*' },
-  { id: 'tire', title: 'Pneumatiques', price: '288€ TTC*' },
-  { id: 'wiper', title: "Balais d'essuie-glace", price: '55€ TTC*' },
+  { id: 'tire', title: 'Diagnostique approfondi', price: '49€ TTC*' },
+  { id: 'wiper', title: "Diagnostique basic", price: '20€ TTC*' },
+
 
 ]
 
@@ -76,6 +77,8 @@ export default function Services() {
           </Link>
         </div>
         <div className="services__note">*Prix moyens — <a href="#infos">pour en savoir plus</a></div>
+
+
       </div>
     </section>
   )

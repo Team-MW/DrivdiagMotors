@@ -68,7 +68,7 @@ export default function Footer() {
             <ul className="footer__list">
               <li>46 chemin Teynier, 31300 Toulouse</li>
               <li><a href="tel:+33532026444">05 32 02 64 44</a></li>
-              <li><a href="tel:+33600000000">Mobile : 06 00 00 00 00</a></li>
+              <li><a href="tel:+33613238860">Mobile : 06 13 23 88 60</a></li>
               <li><a href="mailto:Labonneauto31@gmail.com">Labonneauto31@gmail.com</a></li>
               <li><Link to="/garages">Système de réservation en ligne</Link></li>
             </ul>
@@ -76,7 +76,7 @@ export default function Footer() {
               <a href="#" aria-label="Facebook" className="footer__socialBtn"><FacebookIcon /></a>
               <a href="#" aria-label="Instagram" className="footer__socialBtn"><InstagramIcon /></a>
               <a
-                href="https://wa.me/33600000000"
+                href="https://wa.me/33613238860"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"

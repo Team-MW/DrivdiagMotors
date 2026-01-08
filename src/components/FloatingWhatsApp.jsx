@@ -11,7 +11,7 @@ function WhatsAppIcon(props) {
 export default function FloatingWhatsApp() {
     return (
         <a
-            href="https://wa.me/33600000000"
+            href="https://wa.me/33613238860"
             target="_blank"
             rel="noopener noreferrer"
             className="floatingWhatsApp"

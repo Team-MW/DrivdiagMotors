@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="siteHeader">
       <div className="siteHeader__inner">
-        <Link to="/" className="siteHeader__brand">
+        <Link to="/" className="siteHeader__brand" onClick={closeMenu}>
           <img src={logoLine} alt="Drive Diag Motors" style={{ height: '40px', width: 'auto' }} />
         </Link>
 
@@ -22,8 +22,22 @@ export default function Header() {
           aria-expanded={isOpen}
           onClick={() => setIsOpen((v) => !v)}
         >
-          Menu
+          {isOpen ? 'Fermer' : 'Menu'}
         </button>
+
+        {/* Mobile Menu Backdrop */}
+        {isOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 90, // Below nav (100)
+              background: 'rgba(0,0,0,0.3)',
+              backdropFilter: 'blur(2px)'
+            }}
+            onClick={closeMenu}
+          />
+        )}
 
         <nav className={`siteHeader__nav ${isOpen ? 'is-open' : ''}`}>
           <a href="/#prestations" onClick={closeMenu}>Prestations</a>
