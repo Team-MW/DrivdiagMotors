@@ -173,9 +173,26 @@ a {
 
 /* Garages Hero (page trouver un garage) */
 .garagesHero {
-  background: #e10012;
+  /* Rich darker red gradient */
+  background: linear-gradient(135deg, #cc000e 0%, #a2000b 100%);
   color: #fff;
-  padding: 120px 16px 32px;
+  padding: 120px 16px 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(225, 0, 18, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Add a subtle grid overlay to match the theme */
+.garagesHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
 }
 
 .garagesHero__inner {
@@ -188,24 +205,30 @@ a {
 }
 
 .garagesHero__eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-weight: 800;
-  letter-spacing: .16em;
+  letter-spacing: .2em;
   text-transform: uppercase;
-  font-size: 12px;
-  opacity: 0.9;
+  font-size: 13px;
+  opacity: 0.8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .garagesHero__title {
-  margin: 0 0 10px;
-  font-size: 40px;
+  margin: 0 0 16px;
+  font-size: 42px;
   font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .garagesHero__subtitle {
   margin: 0;
-  font-size: 16px;
-  max-width: 46ch;
+  font-size: 18px;
+  max-width: 48ch;
+  line-height: 1.6;
+  opacity: 0.95;
 }
 
 .garagesHero,

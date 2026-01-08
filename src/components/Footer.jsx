@@ -13,15 +13,14 @@ function FacebookIcon(props) {
     </svg>
   )
 }
-function InstagramIcon(props) {
+function SnapchatIcon(props) {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" {...props}>
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M12.003 3.6c-.66 0-1.74.15-2.34.81-.54.6-.66 1.47-.6 1.8.06.39-.06.63-.33.81-.24.15-.45.06-.57 0-.48-.21-1.35-.39-1.89.21-.29.33-.29.84-.23 1.25.04.28 0 .58-.45.82-.45.24-1.29.21-1.62.9-.17.36-.08.92.23 1.34.21.27.18.54-.03.75-.42.42-1.32 1.32-.42 2.52.48.66 1.5.39 1.95.27.39-.09.6.15.54.42-.06.27-.3.9-.39 1.11-.21.48.06 1.14.72 1.35.63.21 1.53.06 2.01-.27.27-.18.6-.09.78.18.15.21.36.75 1.5.75 1.08 0 1.29-.45 1.44-.66.21-.3.57-.36.81-.21h.03c.24-.15.6-.09.81.21.15.21.36.66 1.44.66 1.14 0 1.35-.54 1.5-.75.18-.27.51-.36.78-.18.48.33 1.38.48 2.01.27.66-.21.93-.87.72-1.35-.09-.21-.33-.84-.39-1.11-.06-.27.15-.51.54-.42.45.12 1.47.39 1.95-.27.9-1.2-.03-2.13-.42-2.52-.21-.21-.24-.48-.03-.75.3-.42.39-.98.23-1.34-.33-.69-1.17-.66-1.62-.9-.45-.24-.49-.54-.45-.82.06-.41.06-.92-.23-1.25-.54-.6-1.41-.42-1.89-.21-.12.06-.33.15-.57 0-.27-.18-.39-.42-.33-.81.06-.33-.06-1.2-.6-1.8-.6-.66-1.68-.81-2.34-.81z" />
     </svg>
   )
 }
+
 function WhatsAppIcon(props) {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
@@ -73,8 +72,6 @@ export default function Footer() {
               <li><Link to="/garages">Système de réservation en ligne</Link></li>
             </ul>
             <div className="footer__social">
-              <a href="#" aria-label="Facebook" className="footer__socialBtn"><FacebookIcon /></a>
-              <a href="#" aria-label="Instagram" className="footer__socialBtn"><InstagramIcon /></a>
               <a
                 href="https://wa.me/33613238860"
                 target="_blank"
@@ -83,6 +80,15 @@ export default function Footer() {
                 className="footer__socialBtn"
               >
                 <WhatsAppIcon />
+              </a>
+              <a
+                href="https://www.snapchat.com/add/labonneauto31"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Snapchat"
+                className="footer__socialBtn"
+              >
+                <SnapchatIcon />
               </a>
             </div>
           </div>
